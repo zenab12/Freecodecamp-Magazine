@@ -50,3 +50,7 @@ main {
 - > Magazines often use justified text in their printed content to structure their layout and control the flow of their content. While this works in printed form, justified text on websites can be an accessibility concern, for example presenting challenges for folks with dyslexia.
 - > The `object-fit` property tells the browser how to position the element within its container. In this case, cover will set the image to fill the container, cropping as needed to avoid changing the aspect ratio.
 - > The `::first-letter` pseudo-selector allows you to target the first letter in the text content of an element.
+
+![Screenshot 2022-07-25 at 14-14-40 Magazine](https://user-images.githubusercontent.com/78083890/180775457-8bf42f4f-e37d-4e2e-9a89-fc37f5e8230e.png)
+
+
