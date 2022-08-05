@@ -72,11 +72,10 @@ main {
 
 `gap: row column` 
 
-`***justify-content: end` or `right` related it’s related to language (English, arabic ,…)so `end` related to the end of font but `right` it will be in the right direction*** 
+**`justify-content: end` or `right` related it’s related to language (English, arabic ,…)so `end` related to the end of font but `right` it will be in the right direction** 
 
-`**justify-items:center; align-items:center` mean width will be ignored and will be centered in it’s column horizontally and vertically 
-
-`grid-template-colums:repeat(auto-fill,100px)` mean will create automatic column with container parent width but `auto-fit`  will create automatic column with count with child elements only.
+**`justify-items:center; align-items:center` mean width will be ignored and will be centered in it’s column horizontally and vertically 
+`grid-template-colums:repeat(auto-fill,100px)` mean will create automatic column with container parent width but `auto-fit`  will create automatic column with count with child elements only.**
 
 `grid-template: template-area  template-rows template-area  template-rows / template-columns` #two rows
 *`#if we use grid-template with repeat function will damage area and columns so we should use units not functions`   as this will not work `.element{grid-template: “area-1 area-2” 100px “. area-4” 100px/repeat(2,50%)` but to make it work we use this instead 
