@@ -1,12 +1,17 @@
 # [Live Demo](https://zenab12.github.io/Freecodecamp-Magazine/)
 ## Tips i learned While coding this task :
-- The `loading` attribute on an `img` element can be set to `lazy` to tell the browser not to fetch the image resource until it is needed (as in, when the user scrolls the image into view). As an additional benefit, lazy loaded elements will not load until the non-lazy elements are loaded - this means users with slow internet connections can view the content of your page without having to wait for the images to load.
 
-- The `Referer` HTTP header contains information about the address or `URL` of a page that a user might be visiting from. This information can be used in analytics to track how many users from your page visit freecodecamp.org, for example. Setting the `rel` attribute to `noreferrer` omits this information from the HTTP request. Give your a element a rel attribute set to noreferrer.
+### Here are the supported values for the `loading` attribute:
+> - The `loading` attribute on an `img` element can be set to `lazy` to tell the browser not to fetch the image resource until it is needed (as in, when the user scrolls the image into view). As an additional benefit, lazy loaded elements will not load until the non-lazy elements are loaded - this means users with slow internet connections can view the content of your page without having to wait for the images to load.
 
--if i creat `html` selector and give it a `font-size` property set to `62.5%`. This will set the default font size for your web page to 10px (the browser default is 16px).
+> - `lazy`: Defer loading of the resource until it reaches a [calculated distance](https://web.dev/browser-level-image-lazy-loading/#distance-from-viewport-thresholds) from the viewport.
+> - `eager`: Default loading behavior of the browser, which is the same as not
+including the attribute and means the image is loaded as soon as
+possible, regardless of where it's located on the page. While this is
+the default, it can be useful to explicitly set this if your tooling
+automatically adds `loading="lazy"` if there is no explicit value, or if your linter complains if it is not explicitly set.
 
-This will make it easier for you to work with rem units later, as 2rem would be 20px
+## 🤩 Notes I learned from Freecodecamp about grid-template :
 
 - in grid-template Use the minmax function to make your columns responsive on any device. The minmax function takes two arguments, the first being the minimum value and the second being the maximum. These values could be a length, percentage, fr, or even a keyword like max-content
 
@@ -87,3 +92,7 @@ main {
 #if we give in parent in lines or columns names as `[red-1-col] 100px [red-2-col] 200px`   and used inside red div we will give for `grid-area:red;` and it will work***
 
 </aside>
+
+
+> - if i creat `html` selector and give it a `font-size` property set to `62.5%`. This will set the default font size for your web page to 10px (the browser default is 16px). This will make it easier for you to work with rem units later, as 2rem would be 20px
+> - The `Referer` HTTP header contains information about the address or `URL` of a page that a user might be visiting from. This information can be used in analytics to track how many users from your page visit freecodecamp.org, for example. Setting the `rel` attribute to `noreferrer` omits this information from the HTTP request. Give your a element a rel attribute set to noreferrer.
