@@ -51,6 +51,39 @@ main {
 - > The `object-fit` property tells the browser how to position the element within its container. In this case, cover will set the image to fill the container, cropping as needed to avoid changing the aspect ratio.
 - > The `::first-letter` pseudo-selector allows you to target the first letter in the text content of an element.
 
+<!--
 ![Screenshot 2022-07-25 at 14-14-40 Magazine](https://user-images.githubusercontent.com/78083890/180775457-8bf42f4f-e37d-4e2e-9a89-fc37f5e8230e.png)
+-->
 
 
+## 🤩 Notes I learned from Maharatech about grid-template :
+<aside >
+
+## grid container :
+
+`display:grid;` `grid-template-columns:`  `px` or `fr` or `min-content` or `max-content` or `minmax(minnumpx, maxnumpx)` or `fit-content(numpx)`  or `auto` or `repeat()`
+
+`grid-auto-flow:row or column` created automatic but default option is row and it is used with `grid-auto-columns`; and `grid-auto-rows` 
+
+`gap: row column` 
+
+`***justify-content: end` or `right` related it’s related to language (English, arabic ,…)so `end` related to the end of font but `right` it will be in the right direction*** 
+
+`**justify-items:center; align-items:center` mean width will be ignored and will be centered in it’s column horizontally and vertically 
+
+`grid-template-colums:repeat(auto-fill,100px)` mean will create automatic column with container parent width but `auto-fit`  will create automatic column with count with child elements only.
+
+`grid-template: template-area  template-rows template-area  template-rows / template-columns` #two rows
+*`#if we use grid-template with repeat function will damage area and columns so we should use units not functions`   as this will not work `.element{grid-template: “area-1 area-2” 100px “. area-4” 100px/repeat(2,50%)` but to make it work we use this instead 
+`.element{grid-template: “area-1 area-2” 100px “. area-4” 100px/50% 50%` 
+`grid-auto-flow: column or row dense`  dense mean full any empty space.
+
+### grid items we use this :
+
+`grid-column-start:1; grid-template-end :span 2;`#mean take two space and end at column num3. and we can use shorthand rule called `grid-column: column-start/column-end` 
+
+`grid-area: row-start / column-start/ row-end / column-end`   or `grid-area: area-name.` 
+
+#if we give in parent in lines or columns names as `[red-1-col] 100px [red-2-col] 200px`   and used inside red div we will give for `grid-area:red;` and it will work***
+
+</aside>
